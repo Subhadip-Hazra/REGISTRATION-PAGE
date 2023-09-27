@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="container">
+        <form class="register-form" id="registration-form">
+            <h2>Register</h2>
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" placeholder="Enter a unique username" id="username" name="username" required>
+                <i class='bx bxs-user-circle' style='color:#19251f'  ></i>
+            </div>
+            <div class="input-container">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Enter Gmail" id="email" name="email" required>
+                <i class='bx bxl-gmail' style='color:#f1440b'  ></i>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" placeholder="Enter Your Password" id="password" name="password" required>
+                <i class='bx bx-lock' style='color:#262424'  ></i>
+            </div>
+            <div class="input-container">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" id="confirm-password" name="confirm-password" required>
+                <i class='bx bx-lock-open' style='color:#262424' ></i>
+            </div>
+            <button class="register-button" type="submit">Register</button>
+            <div class="message-container">
+                <p class="message" id="registration-message"></p>
+            </div>
+        </form>
+    </div>
+    <script src="register.js"></script>
+</body>
+</html>
